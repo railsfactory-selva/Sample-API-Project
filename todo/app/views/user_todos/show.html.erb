@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @user_todo.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @user_todo.description %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @user_todo.completed %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @user_todo.order %>
+</p>
+
+<%= link_to 'Edit', edit_user_todo_path(@user_todo) %> |
+<%= link_to 'Back', user_todos_path %>
