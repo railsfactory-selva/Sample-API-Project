@@ -5,11 +5,13 @@ class UserTodosController < ApplicationController
   # GET /user_todos.json
   def index
     @user_todos = UserTodo.all
+    render :json=>@user_todos
   end
 
   # GET /user_todos/1
   # GET /user_todos/1.json
   def show
+    render :json=>@user_todo
   end
 
   # GET /user_todos/new
