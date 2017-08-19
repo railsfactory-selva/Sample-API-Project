@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" media="screen" rel="stylesheet" href='myproject/css/main.css'>
+
+    </head>
+
+    <body>
+		<h1>Hello World - Direct First Paint</h1>
+
+		<await(user_todo from data.user_data)  timeout=2>
+
+		    <include("./main.marko", data={todo: user_todo})/>
+		    <await-error>
+		   		<include("./error.marko")/>
+		    </await-error>
+		</await>
+	</body>
+</html>

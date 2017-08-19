@@ -1,0 +1,17 @@
+
+<table border="1">
+	<tr>
+	<th>ID</th>
+	<th>Title</th>
+	<th>Description</th>
+	<th>completed</th>
+	</tr>
+	<for (response in data.todo.response | status-var=loop)>
+	    <tr>
+	    	<td>${response.id}</td>
+	    	<td>${response.title}</td>
+	    	<td>${response.description}</td>
+	    	<td>${response.completed}</td>
+	    </tr>
+	</for>
+</table>
